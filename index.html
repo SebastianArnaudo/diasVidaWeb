@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Dias de Vida</title>
+</head>
+<body>
+    
+    <div class="main">
+        <section class="modalContenedor">
+            <!--ocupa y "bloquea" la pantalla entera con un background opaco -->
+            <div class="modal" id="modal"> 
+                <!--contiene el mensaje y el cierre-->
+                <div class="modalContenido" id="modalContenido">
+                    <h1>Aviso<h1>
+                    <p id="pModal"></p>
+                    <button id="closeButton">Okey!</button>
+                    
+                    <div class="listErrorsHiden" id="errors"> <!--Posible razones por las que el programa resiviria un "NaN" -->
+                        <ul>
+                            <h3>Los errores pueden ser:</h3>
+                            <li>Ingreso campos vacios.</li>
+                            <li>Ingreso una fecha superior a la actual.</li>
+                            <li>Ingreso "29" de febrero en un año no bisiesto.</li>
+                            <li>Ingreso mas dias de los que el mes deberia tener.</li>
+                        </ul>
+                    </div>
+
+                    <button id="optionsButton">Lista de Errores</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="input">
+            <!--Contiene tanto el titulo como la secction de ingreso de datos-->
+            <h2>Ingrese su fecha de nacimiento <br> en formato DD/MM/AA</h2>
+
+            <input class="date" id="date" type="date" min="1920-01-01">
+            
+            <div class="buttons">
+                <button id="calculator">Calcular</button> <!--Boton que llama a la funcion principal de la pagina -->
+            </div>
+        </section>
+
+        <section class="info" id="output">
+            <!--Seccion en la que se muestra el resultado de la funcion realizada-->
+            <p id="days"> </p>
+        </section>
+    </div>
+
+    <script src="js/index.js"></script> 
+</body>
+</html>

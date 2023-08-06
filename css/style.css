@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(
+    to bottom right,    
+    rgb(0, 110, 255) 10%, rgb(0, 255, 200) 100%
+    );
+    color:rgb(62, 64, 211);
+}
+
+li{
+    list-style-type: none;
+    padding: 1%;
+    margin: 3%;
+}
+
+button{
+    margin: 5%;
+    color:rgb(255, 255, 255);
+    height: auto;
+    text-decoration: flex;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    background-color:rgb(124, 126, 243);
+    cursor: pointer;
+    border: .5;
+    border-color: rgb(124, 126, 243);
+    transition: .5s;
+}
+
+button:hover{
+    color:rgb(0, 0, 0);
+    background: rgb(197, 198, 243);
+    border-color: rgb(197, 198, 243);;
+    transition: .5s;
+}
+
+
+.main{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+/* Modal */
+.modalContenedor{
+    padding-top: 10%;
+    box-sizing: border-box;
+}
+
+.modal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    position:absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(181, 181, 181,0.7);
+}
+
+.modalContenido{
+    margin: auto;
+    background-color: #fafafa;
+    padding: 10px;
+    text-align: center;
+    height: auto;
+    width: 40%;
+}
+
+.listErrorsHiden{
+    display: none;
+}
+
+.listErrorsShow{
+    display: flex;
+}
+
+/*Input*/
+
+.input{
+    padding: 1%;
+    height: 50%;
+    width: 50%;
+    background-color: #fafafa;
+    display: block;
+    margin: auto;
+}
+
+.buttons{
+    padding: 2%;
+}
+
+.date{
+    margin-top: 5%;
+    font-family: roboto;
+    background-color: #fafafa;
+    padding: 2%;
+    width: 50%;
+    border: .5;
+    border-color: rgb(124, 126, 243);
+    outline: none;
+}
+
+/*Output*/
+.info{
+    background-color: #fafafa;
+    display: none;
+    padding: 5%;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+} 
