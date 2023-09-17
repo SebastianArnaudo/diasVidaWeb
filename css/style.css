@@ -80,8 +80,9 @@ button:hover{
     text-align: center;
     height: auto;
     width: 40%;
-    border: .5;
+    border: 2px;
     border-color: rgb(124, 126, 243);
+
 }
 
 .listErrorsHiden{
@@ -101,7 +102,7 @@ button:hover{
     background-color: #fafafa;
     display: block;
     margin: auto;
-    border: .5;
+    border: 2px;
     border-color: rgb(124, 126, 243);
 }
 
@@ -129,6 +130,6 @@ button:hover{
     width: 50%;
     margin: auto;
     margin-top: 1%;
-    border: .5;
+    border: 2px;
     border-color: rgb(124, 126, 243);
 } 
